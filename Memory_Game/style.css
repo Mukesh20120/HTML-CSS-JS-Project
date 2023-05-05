@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: cursive;
+}
+.text-style{
+    font-weight: bold;
+    text-shadow: 0 .2rem .2rem rgba(0,0,0,0.4);
+}
+span{
+    font-size: 2rem;
+    color: rgb(5, 211, 5);
+}
+#level{
+    color: orangered;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://imgs.search.brave.com/47zdu8Eb_Si3IlKbeuwP-eU1GP-a2jXY7_LKCg9g-ho/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9pdjVETFlJ/LmpwZw");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.heading{
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.board{
+   font-size: 4rem;
+}
+
+.img{
+    width: 10rem;
+    border: .1rem solid black;
+    cursor: pointer;
+    padding: 0.4rem;
+    background-color: rgba(0,0,0,.1);
+}
+.img:hover{
+    background-color: aqua;
+}
+.img-grid{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80rem;
+    justify-content: center;
+}
+.remove{
+    background-color: rgba(255,255,255,0.4);
+    cursor:default;
+}
+.remove:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+@media (max-width: 810px) {
+    .img{
+        width: 8rem;
+    }
+    .img-grid{
+        width: 64rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .img{
+        width: 7rem;
+    }
+    .img-grid{
+        width: 56rem;
+    }
+}
+@media (max-width: 570px) {
+    .img{
+        width: 6rem;
+    }
+    .img-grid{
+        width: 24rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}

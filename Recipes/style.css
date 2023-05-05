@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("https://www.stockvault.net/data/2017/02/03/222197/preview16.jpg");
+    background-size: cover;
+    font-size: 62.5%;
+    font-family: cursive;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem 5rem 0rem;
+}
+
+.dish-img{
+    width: 25rem;
+    border-radius: 3rem;
+    box-shadow: 0rem 0.3rem 0.3rem rgba(0,0,0,0.6);
+   margin-top: 1rem;
+   cursor: pointer;
+   position: relative;
+}
+
+.dish-img-container{
+   position: relative;
+
+}
+.dish-img-container:hover .dish-img{
+    box-shadow: 0.3rem 0.3rem 0.3rem brown,0.4rem 0.4rem 0.4rem blue,0.8rem 0.8rem 0.7rem green,
+    1rem 1rem 1rem orange;
+    filter: blur(0.3rem);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.dish-img-container::before{
+    content: "";
+    width: 5px;
+    height: 0%;
+    background-color: black;
+    position: absolute;
+    top: 1rem;
+    left: 21rem;
+    z-index: 10;
+    transition: height 0.3s;
+}
+.dish-img-container:hover::before{
+    height: 90%;
+}
+.dish-img-container::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    z-index: 10;
+    transition: width 0.4s;
+}
+.dish-img-container:hover::after{
+    width: 85%;
+}
+
+.instruct{
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.instruct li{
+    list-style-type: roman;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.dish-img-container:hover .instruct{
+    opacity: 1;
+}
+
+
+.ingredent-text{
+    margin-left: 13rem;
+}
+
+.heading{
+    font-size: 1.7rem;
+}
+.heading h5{
+    font-size: 1.2rem;
+    color:rgba(0,0,0,0.6);
+}
+
+
+
+/* ingredient container start*/
+.ingredient-container{
+    padding: 2rem;
+    display: none;
+}
+.ingredient-list li{
+    margin-left: 2rem;
+    list-style-type:lower-roman;
+    font-size: 1.5rem;
+}
+/* ingredient container end*/
+
+/*instruction container start */
+.instruction-container{
+    padding: 1rem;
+}
+.instruction-container ul li{
+    font-size: 1rem;
+    padding: 0.2rem;
+    font-weight: 900;
+    color: rgba(0,0,0,0.8);
+    list-style-type:none;
+}
+/*instruction container end */
+
+.btn-container{
+    margin: 3rem;
+}
+.btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 10rem;
+    border: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 3rem;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.5);
+    box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 20;
+}
+
+
+
+
+
+
